@@ -10,7 +10,7 @@ namespace kithub.api.models.Dtos
 	{
 		public string Token { get; set; }
 		public string Id { get; set; } = "default";
-        public int CartId { get; set; }
+		public int CartId { get; set; } = 1;
         public string FirstName { get; set; }
 		public string LastName { get; set; }
 		public string EmailAddress { get; set; }
