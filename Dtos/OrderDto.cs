@@ -9,10 +9,11 @@ namespace kithub.api.models.Dtos
     public class OrderDto
     {
         public int Id { get; set; }
-        public int Amount { get; set; }
+        public decimal Amount { get; set; }
         public string Status { get; set; } = string.Empty;
         public List<OrderItemDto> OrderItems { get; set; } = new();
         public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedOn { get; set; }
+        public PaymentDto Payment { get; set; }
     }
 }
