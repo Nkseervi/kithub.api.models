@@ -15,5 +15,6 @@ namespace kithub.api.models.Dtos
         public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedOn { get; set; }
         public PaymentDto Payment { get; set; }
+        public ShipmentDto Shipment { get; set; }
     }
 }
