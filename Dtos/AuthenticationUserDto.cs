@@ -9,9 +9,12 @@ namespace kithub.api.models.Dtos
 {
     public class AuthenticationUserDto
     {
-        [Required(ErrorMessage = "Email Address is required.")]
-        public string  Email { get; set; }
-        [Required(ErrorMessage = "Password is required.")]
-        public  string Password { get; set; }
-    }
+		//[Required(ErrorMessage = "Email Address is required.")]
+		[Required(ErrorMessage = "Please enter a valid mobile number")]
+		[DataType(DataType.PhoneNumber, ErrorMessage = "Please enter a valid mobile number")]
+		[Length(10, 10, ErrorMessage = "Please enter a valid mobile number")]
+		public string Email { get; set; }
+		//[Required(ErrorMessage = "Password is required.")]
+		public string Password { get; set; }
+	}
 }
