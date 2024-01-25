@@ -16,7 +16,7 @@ namespace kithub.api.models.Dtos
         public string PaymentMethod { get; set; } = string.Empty;
         public string PaymentStatus { get; set; } = string.Empty;
         public decimal PaymentAmount { get; set; }
-        public string? TrackingId { get; set; }
+        public string TrackingId { get; set; } = string.Empty;
         public int ShippingAddressId { get; set; }
         public int BillingAddressId { get; set; }
         public string ShipmentStatus { get; set; } = string.Empty;
