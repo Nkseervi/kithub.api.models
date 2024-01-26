@@ -25,5 +25,6 @@ namespace kithub.api.models.Dtos
         [Required, Phone]
         public string Phone { get; set; }
         public string? Instructions { get; set; }
+        public bool SetAsDefault { get; set; }
     }
 }
