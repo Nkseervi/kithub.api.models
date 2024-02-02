@@ -24,6 +24,7 @@ namespace kithub.api.models.Delhivery
         public string? cash { get; set; }
         public string? pickup { get; set; }
         public string? state_code { get; set; }
+        public string? is_oda { get; set; }
     }
 
 }

@@ -13,5 +13,6 @@ namespace kithub.api.models.Dtos
         public string District { get; set; }
         public bool PrepaidAvailable { get; set; }
         public string State { get; set; }
+        public bool IsOutOfDeliveryArea { get; set; }
     }
 }
