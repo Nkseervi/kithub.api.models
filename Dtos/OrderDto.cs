@@ -19,6 +19,7 @@ namespace kithub.api.models.Dtos
         public string TrackingId { get; set; } = string.Empty;
         public int ShippingAddressId { get; set; }
         public int BillingAddressId { get; set; }
+        public int DiscountId { get; set; }
         public string ShipmentStatus { get; set; } = string.Empty;
         public decimal ShippingAmount { get; set; }
     }
